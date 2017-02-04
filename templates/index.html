@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>Splitwise</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="static/stylesheets/style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<div class="header">
+				<h3 class="text-muted"><center><br>Welcome {{username}}
+				<br><br></center></h3>
+			</div>
+			
+			<div>
+				<form action="logout" method="post">
+				<center>
+						<input type="submit" value="Logout">
+				</center>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<div>			
+				<form action="upload" method="post" enctype="multipart/form-data">
+					<center>
+						<br>{{msg}}
+						<br><br>
+						<input type="file" name="file">
+						<br><br>
+						 Add One Word Subject: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						<input type="text" name="subject">
+						<br><br>
+						 Assign Priority: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0: Least Important | 10: Most Important
+						<br><br>
+						<select name='priority' id='priority'>
+							<option value='0'>0</option>
+							<option value='1'>1</option>
+							<option value='2'>2</option>
+							<option value='3'>3</option>
+							<option value='4'>4</option>
+							<option value='5'>5</option>
+							<option value='6'>6</option>
+							<option value='7'>7</option>
+							<option value='8'>8</option>
+							<option value='9'>9</option>
+							<option value='10'>10</option>
+						</select><br><br>
+						<br>
+						<input type="submit" value="Upload">
+					</center>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<div class="header">
+				<h3 class="text-muted"><center><a href='list'>View your uploaded images</a></center></h3>
+			</div>
+			
+			<hr>
+			
+			<div class="header">
+				<h3 class="text-muted"><center><a href='list_all'>View all uploaded images</a></center></h3>
+			</div>
+			
+		</div>
+	</body>
+</html>
+						<br><br>
